@@ -1,0 +1,61 @@
+{
+    "minimum": {
+
+        "imeprezime": "A a",
+        "ulicaibroj": "A a",
+        "postanskibroj": "11000",
+        "grad": "Beograd",
+        "telefon": "123456789",
+        "email": "marko@gmail.com"
+    },
+
+    "maximum": {
+
+        "kolicina": "100",
+        "imeprezime": "Damir Smajic-Damirovic",
+        "ulicaibroj": "Azize Az-iza 162",
+        "postanskibroj": "21000",
+        "grad": "Novi Sad",
+        "telefon": "1234567890",
+        "email": "marko.markovic123@gmail.com",
+        "napomena": "Aa.!$;@ ghjdsag gkjhdskjbgsd ksbj,ag kjsd,fsd"
+        
+    },
+
+    "aboveminimum": {
+
+        "kolicina": "2",
+        "imeprezime": "Da Sm",
+        "ulicaibroj": "Az Az 16",
+        "postanskibroj": "81000",
+        "grad": "Nis",
+        "telefon": "123456789",
+        "email": "marko.markovic@gmail.com"
+    },
+
+    "bellowmaximum": {
+
+        "kolicina": "99",
+        "imeprezime": "Damir Smajic",
+        "ulicaibroj": "Azize Azinovica 16",
+        "postanskibroj": "11000",
+        "grad": "Beograd",
+        "telefon": "123456789",
+        "email": "marko.ma@gmail.com"
+    },
+
+    "nominal": {
+        "imeprezime": "Damir Smajic",
+        "ulicaibroj": "Azize Aziza 16",
+        "postanskibroj": "11000",
+        "grad": "Beograd",
+        "telefon": "123456789",
+        "email": "marko@gmail.com",
+        "kolicina": "50"
+    },
+
+    "invalid": {
+        "imeprezime": "",
+        "ulicaibroj": ""
+    }
+}
