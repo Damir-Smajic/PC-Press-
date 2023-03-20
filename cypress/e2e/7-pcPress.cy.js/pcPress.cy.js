@@ -212,5 +212,8 @@ context('PC Press', () => {
         prodavnica.prodavnicaPageAssert()
     })
 
+    it('TC_20 NEGATIVE' , () => {
+        
+    })
 
 })
