@@ -35,17 +35,17 @@ class Prodavnica
   
     pcLogo = () => cy.get('#logo')
     
-    feedIcon = () => cy.get('[href="https://pcpress.rs/feed/"]')
+    feedIcon = () => cy.get('[href="http://pcpress.rs/feed/"]')
 
     pcLogoFooter = () => cy.get('[alt="PC Online"]')
 
-    newsFeed = () => cy.get('[href="https://pcpress.rs/newsletter/"]')
+    newsFeed = () => cy.get('[href="http://pcpress.rs/newsletter/"]')
 
-    faceBook = () => cy.get('[href="https://facebook.com/pcpress.rs"]')
+    faceBook = () => cy.get('[href="http://facebook.com/pcpress.rs"]')
 
-    twitter = () => cy.get('[href="https://twitter.com/PCPressRS"]')
+    twitter = () => cy.get('[href="http://twitter.com/PCPressRS"]')
 
-    pravilaKoristenja = () => cy.get('[href="https://pcpress.rs/pravila-koriscenja-sajta/"]')
+    pravilaKoristenja = () => cy.get('[href="http://pcpress.rs/pravila-koriscenja-sajta/"]')
 
 
     // ACTIONS
