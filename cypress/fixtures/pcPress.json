@@ -55,7 +55,12 @@
     },
 
     "invalid": {
-        "imeprezime": "",
-        "ulicaibroj": ""
+        "imeprezime": "A",
+        "ulicaibroj": "1",
+        "postanskibroj": "21000",
+        "grad": "Beograd",
+        "telefon": "12345678",
+        "email": "@gmail.com",
+        "kolicina": "A"
     }
 }
