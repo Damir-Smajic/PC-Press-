@@ -56,6 +56,10 @@ class Prodavnica
         this.pc11brojeva().check()
     }
 
+    kolicinaMinimalType(kolicina) {
+        this.kolicinaMinimal().clear().type(kolicina)
+    }
+
     pc11brojevaKupujemClick () {
         this.pc11brojevaKupujem().click()
     }

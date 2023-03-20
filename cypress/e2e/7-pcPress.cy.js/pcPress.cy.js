@@ -213,7 +213,10 @@ context('PC Press', () => {
     })
 
     it('TC_20 NEGATIVE' , () => {
-        
+
+        prodavnica.pc11brojevaCheck()
+        prodavnica.kolicinaMinimalType(pcpress.invalid.kolicina)
+        prodavnica.pc11brojevaKupujemClick()
     })
 
 })
