@@ -119,7 +119,7 @@ context('PC Press', () => {
 
     // Ispitati zasto test prolazi u headed modu a ne u headless-u
 
-    it('TC_10 POSITIVE', () => {
+    it.only('TC_10 POSITIVE', () => {
         
         prodavnica.newsFeedClick()
         prodavnica.newsFeedAssert()
