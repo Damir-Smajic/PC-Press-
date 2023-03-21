@@ -217,7 +217,7 @@ context('PC Press', () => {
         prodavnica.pc11brojevaCheck()
         prodavnica.kolicinaMinimalType(pcpress.invalid.kolicina)
         prodavnica.pc11brojevaKupujemClick()
-        prodavnica.kolicinaAssertError()
+        prodavnica.errorPopUpAssert()
     })
 
 })
