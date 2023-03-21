@@ -9,6 +9,7 @@ class Prodavnica
     kolicina2 = () => cy.get('#kolselektor15')
     kolicina99 = () => cy.get('#kolselektor4')
     kolicina50 = () => cy.get('#kolselektor14')
+    kolicinaError = () => cy.get('#proverainside')
 
     pc11brojeva = () => cy.get('#arselektor1') 
     pc11brojevaKupujem = () => cy.get('#artikal1bg > .naslovna > tbody > :nth-child(2) > .naslovnacheck > img')
@@ -224,6 +225,10 @@ class Prodavnica
 
     pravilaKoristenjaPageAssert () {
         cy.url().should('contain', '/pravila-koriscenja-sajta')
+    }
+
+    kolicinaAssertError () {
+        this.kolicinaError().should('exist')
     }
 }
 

@@ -212,11 +212,12 @@ context('PC Press', () => {
         prodavnica.prodavnicaPageAssert()
     })
 
-    it('TC_20 NEGATIVE' , () => {
+    it.only('TC_20 NEGATIVE' , () => {
 
         prodavnica.pc11brojevaCheck()
         prodavnica.kolicinaMinimalType(pcpress.invalid.kolicina)
         prodavnica.pc11brojevaKupujemClick()
+        prodavnica.kolicinaAssertError()
     })
 
 })
