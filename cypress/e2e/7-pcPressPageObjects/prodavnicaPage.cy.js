@@ -10,6 +10,7 @@ class Prodavnica
     kolicina99 = () => cy.get('#kolselektor4')
     kolicina50 = () => cy.get('#kolselektor14')
     errorPopUp = () => cy.get('#proverainside')
+    errorNarudzbenica = () => cy.get('#doubleprovera')
 
     pc11brojeva = () => cy.get('#arselektor1') 
     pc11brojevaKupujem = () => cy.get('#artikal1bg > .naslovna > tbody > :nth-child(2) > .naslovnacheck > img')
@@ -185,6 +186,12 @@ class Prodavnica
         this.pravilaKoristenja().invoke('removeAttr', 'target'). click()
     }
 
+    // TC_21 
+
+    aktuelniBrojCasopisaPCKupujemClick () {
+        this.aktuelniBrojCasopisaPCKupujem().click()
+    }
+
 
     // ASSERTIONS
 
@@ -229,6 +236,10 @@ class Prodavnica
 
     errorPopUpAssert () {
         this.errorPopUp().should('exist')
+    }
+
+    errorNarudzbenicaAssert () {
+        this.errorNarudzbenica().should('exist')
     }
 }
 
