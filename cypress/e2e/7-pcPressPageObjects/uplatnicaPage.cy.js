@@ -115,6 +115,12 @@ class Uplatnica
         this.emailType(pcpress.nominal.email)
         this.narucujemButtonClick()
     }
+
+    // ASSERTIONS 
+
+    gradSyncAssert () {
+        this.grad().should('have.css', 'border-color', 'red')
+    }
 }
 
 const uplatnica = new Uplatnica ()
