@@ -239,7 +239,7 @@ class Prodavnica
     }
 
     errorNarudzbenicaAssert () {
-        this.errorNarudzbenica().should('exist')
+        this.errorNarudzbenica().should('be.visible')
     }
 }
 

@@ -244,7 +244,7 @@ context('PC Press', () => {
         
     })
 
-    it('TC_23 NEGATIVE', () => {
+    it.only('TC_23 NEGATIVE', () => {
 
         prodavnica.polugodisnjaCheck()
         prodavnica.polugodisnjaKupujemClick()
@@ -260,7 +260,7 @@ context('PC Press', () => {
         prodavnica.errorNarudzbenicaAssert()
     })
 
-    it.only('TC_24 NEGATIVE', () => {
+    it('TC_24 NEGATIVE', () => {
 
         prodavnica.polugodisnjaCheck()
         prodavnica.polugodisnjaKupujemClick()
@@ -273,7 +273,23 @@ context('PC Press', () => {
         uplatnica.emailType(pcpress.nominal.email)
 
         uplatnica.gradSyncAssert()
-        
+    })
+
+    it('TC_25 NEGATIVE', () => {
+
+        prodavnica.polugodisnjaCheck()
+        prodavnica.polugodisnjaKupujemClick()
+
+        uplatnica.imePrezimeType(pcpress.nominal.imeprezime)
+        uplatnica.ulicaBrojType(pcpress.nominal.ulicaibroj)
+        uplatnica.postanskiBrojType(pcpress.nominal.postanskibroj)
+        uplatnica.gradType(pcpress.nominal.grad)
+        uplatnica.telefonType(pcpress.invalid.telefon)
+        uplatnica.emailType(pcpress.nominal.email)
+        uplatnica.narucujemButtonClick()
+
+        prodavnica.errorNarudzbenicaAssert()
 
     })
+        
 })
