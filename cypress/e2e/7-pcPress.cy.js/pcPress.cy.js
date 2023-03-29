@@ -309,7 +309,7 @@ context('PC Press', () => {
 
     })
 
-    it.only('TC_27 NEGATIVE', () => {
+    it('TC_27 NEGATIVE', () => {
 
         prodavnica.polugodisnjaCheck()
         prodavnica.polugodisnjaKupujemClick()
