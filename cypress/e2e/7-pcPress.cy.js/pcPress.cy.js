@@ -292,7 +292,7 @@ context('PC Press', () => {
 
     })
 
-    it.only('TC_26 NEGATIVE', () => {
+    it('TC_26 NEGATIVE', () => {
 
         prodavnica.polugodisnjaCheck()
         prodavnica.polugodisnjaKupujemClick()
@@ -303,6 +303,16 @@ context('PC Press', () => {
         uplatnica.gradType(pcpress.nominal.grad)
         uplatnica.telefonType(pcpress.nominal.telefon)
         uplatnica.emailType(pcpress.invalid.email)
+        uplatnica.narucujemButtonClick()
+
+        prodavnica.errorNarudzbenicaAssert()
+
+    })
+
+    it.only('TC_27 NEGATIVE', () => {
+
+        prodavnica.polugodisnjaCheck()
+        prodavnica.polugodisnjaKupujemClick()
         uplatnica.narucujemButtonClick()
 
         prodavnica.errorNarudzbenicaAssert()
