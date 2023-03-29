@@ -47,7 +47,7 @@ class Prodavnica
 
     twitter = () => cy.get('[href="http://twitter.com/PCPressRS"]')
 
-    pravilaKoristenja = () => cy.get('[href="http://pcpress.rs/pravila-koriscenja-sajta/"]')
+    pravilaKoristenja = () => cy.get('[href="https://pcpress.rs/pravila-koriscenja-sajta/"]')
 
 
     // ACTIONS

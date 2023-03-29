@@ -137,7 +137,7 @@ context('PC Press', () => {
         prodavnica.twitterPageAssert()
     })
 
-    it('TC_13', () => {
+    it.only('TC_13', () => {
         
         prodavnica.pravilaKoristenjaClick()
         prodavnica.pravilaKoristenjaPageAssert()
